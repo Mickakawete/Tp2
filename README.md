@@ -11,7 +11,21 @@ A RESTful CRUD API built with Express for task management.
 - **Update only task status**: Change only the status of a task.
 - **Delete a task**: Remove a task by its ID.
 
-## Installation
+### API Routes
 
-```sh
-npm install
+| Method | Endpoint                | Description                                 |
+|--------|------------------------ |---------------------------------------------|
+| GET    | `/tasks`                | Returns all tasks                           |
+| GET    | `/tasks/completed`      | Returns only completed tasks                |
+| POST   | `/tasks`                | Creates a new task                          |
+| PUT    | `/tasks/:id`            | Updates the title and/or status of a task   |
+| DELETE | `/tasks/:id`            | Deletes a task by its ID                    |
+
+#### Example Task Object
+
+```json
+{
+  "id": 1,
+  "title": "Task 1",
+  "completed": false
+}
