@@ -29,3 +29,8 @@ A RESTful CRUD API built with Express for task management.
   "title": "Task 1",
   "completed": false
 }
+
+## Contributors
+
+- Mickael
+- Priscilla
